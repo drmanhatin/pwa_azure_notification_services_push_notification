@@ -19,5 +19,6 @@ pnpm-debug.log*
 *.suo
 *.ntvs*
 *.njsproj
+token.js
 *.sln
 *.sw?
