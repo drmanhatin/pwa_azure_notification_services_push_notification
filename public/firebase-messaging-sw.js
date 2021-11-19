@@ -4,6 +4,7 @@
 importScripts('https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js');
 importScripts('https://www.gstatic.com/firebasejs/8.10.0/firebase-messaging.js');
 
+
 // Initialize the Firebase app in the service worker by passing in
 // your app's Firebase config object.
 // https://firebase.google.com/docs/web/setup#config-object
@@ -20,16 +21,14 @@ const firebaseConfig = {
 // Retrieve an instance of Firebase Messaging so that it can handle background
 // messages.
 firebase.initializeApp(firebaseConfig);
+const messaging = firebase.messaging();
 
-console.log("serviceworker opened")
-// Handle incoming messages. Called when:
-// - a message is received while the app has focus
-// - the user clicks on an app notification created by a service worker
-//   `messaging.onBackgroundMessage` handler.
-messaging.onMessage((payload) => {
-  console.log('Message received. ', payload);
-  // ...
-});
+// console.log("serviceworker opened")
+// // Handle incoming messages. Called when:
+// // - a message is received while the app has focus
+// // - the user clicks on an app notification created by a service worker
+// //   `messaging.onBackgroundMessage` handler.
+
 
 
 messaging.onBackgroundMessage((payload) => {
