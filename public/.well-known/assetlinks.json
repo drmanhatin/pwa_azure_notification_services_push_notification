@@ -1,6 +1,6 @@
 [{
     "relation": ["delegate_permission/common.handle_all_urls"],
     "target" : { "namespace": "android_app", "package_name": "net.azurestaticapps.blue_ocean_0326e3003.twa",
-                 "sha256_cert_fingerprints": ["87:81:D6:4C:19:66:94:CA:EC:C3:AB:2A:C0:F3:68:9D:3B:CE:A4:E0:6D:2B:E2:05:0E:A0:91:27:34:BA:AB:B0"] }
+                 "sha256_cert_fingerprints": ["C5:20:59:29:E8:6B:23:49:CF:40:40:E6:1A:8C:CC:34:FB:BD:FB:1F:AA:F3:9E:0A:96:36:05:7A:44:03:EC:F2"] }
   }
 ]
