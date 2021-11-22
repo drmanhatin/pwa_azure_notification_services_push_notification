@@ -30,13 +30,12 @@ const messaging = firebase.messaging();
 // //   `messaging.onBackgroundMessage` handler.
 
 
-
 messaging.onBackgroundMessage((payload) => {
   console.log('[firebase-messaging-sw.js] Received background message ', payload);
   // Customize notification here
-  const notificationTitle = payload.title;
+  const notificationTitle = "title is"+ payload.title;
   const notificationOptions = {
-    body: payload.body,
+    body: "body is" + payload.body,
     icon: '/coalogo.jpg'
   };
 

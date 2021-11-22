@@ -4,8 +4,8 @@ var notificationHubService = azure.createNotificationHubService('pwahub','Endpoi
 
 var payload = {
   data: {
-    message: 'Hello!',
-    body: 'This is a test message'	
+    title: "This is the title",
+    body: "This is the body"
   }
 };
 
