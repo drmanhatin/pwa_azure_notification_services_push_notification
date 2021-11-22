@@ -29,7 +29,10 @@ messaging.onBackgroundMessage((payload) => {
   const notificationTitle = payload.data.title;
   const notificationOptions = {
     body: payload.data.body,
-    icon: '/coalogo.jpg'
+    icon:  '/images/favicon-32x32.png',
+    image: '/images/favicon-32x32.png',
+    badge: '/images/favicon-32x32.png',
+    vibrate: [100, 50, 100],
   };
 
   self.registration.showNotification(notificationTitle,
