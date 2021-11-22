@@ -35,7 +35,7 @@ messaging.onBackgroundMessage((payload) => {
   // Customize notification here
   const notificationTitle = "title is"+ payload.title;
   const notificationOptions = {
-    body: "body is" + payload.body,
+    body: "body is" + payload,
     icon: '/coalogo.jpg'
   };
 
