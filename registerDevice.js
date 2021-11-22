@@ -2,7 +2,7 @@ var azure = require('azure-sb');
 
 //token which links device to the hub   
 //this token is a firebase token
-let token = "fJ6-zUgvI_0nGX00zInvNj:APA91bHG6n5YQgx4vY9o86YY1jeJi_OOpsp6fmuIUB_GR8pMToZ7eK9HL6jWuvoy8rxd_8QbpEETdxa7F-ZdaLcG1lwa1g02nwk2w6zXIsj1ewjKzsw84kxsifie2d-VPcSCLJ3aiuOt";
+let token = "fDh9NjWh5T_5Ger2C4jxxj:APA91bEL6eZIxZXYz5LN4GLLzvG01Ou3mSxgwwsUpyHaH7rAqZ5DQtiL7WJIW6SH0jfBPAFGaYxibcLYTxOQm_Z7aMtrRfR7FoHgOJDw_7RvAdQeU9YVgGZ32gxhOKVAKValhCktsVmj";
 
 var notificationHubService = azure.createNotificationHubService('pwahub','Endpoint=sb://pwaname.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=Ef0WLZiN4XbVZ2oTLAg5fBoquiwefvEfybkmqkzSJIE=');
 
@@ -16,8 +16,8 @@ const installation =
     }  
 
 
-const result = notificationHubService.createOrUpdateInstallation(installation, function(err, val) {
-    console.log("error is", err, val);
+const result = notificationHubService.createOrUpdateInstallation(installation, function(err, val, data) {
+    console.log("error is", err, val, data);
 })
 
 console.log("result is", result);
