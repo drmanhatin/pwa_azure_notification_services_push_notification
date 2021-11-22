@@ -1,6 +1,7 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
   <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+  <p> {{qtoken}} </p>
 </template>
 
 <script lang="ts">
@@ -9,14 +10,19 @@ import HelloWorld from './components/HelloWorld.vue';
 import {initializeApp} from 'firebase/app';	
 import {getMessaging, getToken} from 'firebase/messaging';	
 
-
 @Options({
   components: {
     HelloWorld,
   }, 
+
+
+  
 })
+
 export default class App extends Vue {
   
+  qtoken = "soup";
+
   created() {
     
 const config = {
@@ -33,7 +39,8 @@ const config = {
   const messaging = getMessaging(app);
   
   getToken(messaging).then(token => {
-    console.log(token);
+    this.qtoken = token;
+    console.log("my token is", token);
   });
   
   }
