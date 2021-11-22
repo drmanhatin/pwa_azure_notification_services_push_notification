@@ -29,13 +29,17 @@ const messaging = firebase.messaging();
 // // - the user clicks on an app notification created by a service worker
 // //   `messaging.onBackgroundMessage` handler.
 
-
+//   `messaging.onBackgroundMessage` handler.
+messaging.onMessage((payload) => {
+  console.log('Message received. ', payload);
+  // ...
+});
 messaging.onBackgroundMessage((payload) => {
   console.log('[firebase-messaging-sw.js] Received background message ', payload);
   // Customize notification here
   const notificationTitle = "title is"+ payload.title;
   const notificationOptions = {
-    body: "body is" + payload,
+    body: "body is" + JSON.stringify(payload),
     icon: '/coalogo.jpg'
   };
 
