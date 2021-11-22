@@ -8,7 +8,7 @@ var notificationHubService = azure.createNotificationHubService('pwahub','Endpoi
 
 const installation = 
     { 
-        "installationId": "1234568", 
+        "installationId": "123123", 
         "userID": "MyAmazingUser",
         "tags": ["postvak1", "opvang1", "taal1", "categorie1"], 
         "platform": "GCM", 
