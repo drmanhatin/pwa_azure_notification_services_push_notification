@@ -5,7 +5,7 @@ var azure = require('azure-sb');
 //generate this token using the vue app interface on your phone
 let token = "yourdevicetokenhere";
 
-var notificationHubService = azure.createNotificationHubService('pwahub','Endpoint=sb://pwaname.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=Ef0WLZiN4XbVZ2oTLAg5fBoquiwefvEfybkmqkzSJIE=');
+var notificationHubService = azure.createNotificationHubService('pwahub','Endpoint=yourendpointhere');
 
 const installation = 
     { 
