@@ -2,7 +2,8 @@ var azure = require('azure-sb');
 
 //token which links device to the hub   
 //this token is a firebase token
-let token = "fDh9NjWh5T_5Ger2C4jxxj:APA91bEL6eZIxZXYz5LN4GLLzvG01Ou3mSxgwwsUpyHaH7rAqZ5DQtiL7WJIW6SH0jfBPAFGaYxibcLYTxOQm_Z7aMtrRfR7FoHgOJDw_7RvAdQeU9YVgGZ32gxhOKVAKValhCktsVmj";
+//generate this token using the vue app interface on your phone
+let token = "yourdevicetokenhere";
 
 var notificationHubService = azure.createNotificationHubService('pwahub','Endpoint=sb://pwaname.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=Ef0WLZiN4XbVZ2oTLAg5fBoquiwefvEfybkmqkzSJIE=');
 
