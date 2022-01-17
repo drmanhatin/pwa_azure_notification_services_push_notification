@@ -1,6 +1,6 @@
 var azure = require('azure-sb');
 
-var notificationHubService = azure.createNotificationHubService('pwahub','Endpoint=sb://pwaname.servicebus.windows.net/;SharedAccessKeyName=DefaultFullSharedAccessSignature;SharedAccessKey=Ef0WLZiN4XbVZ2oTLAg5fBoquiwefvEfybkmqkzSJIE=');
+var notificationHubService = azure.createNotificationHubService('pwahub','Endpoint=yourendpointhere');
 
 var payload = {
   data: {
